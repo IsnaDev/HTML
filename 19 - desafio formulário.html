@@ -1,0 +1,124 @@
+<!--
+    REGRAS DO DESAFIO
+
+[ ] Você deve reproduzir o mais parecido possível a tela mostrada na Aula
+
+[ ] Não vale usar CSS nem JavaScript
+
+[ ] Todos os inputs devem conter o parâmetro "name" devidamente preenchido e condizente com o campo
+
+[ ] No campo email, devem ser permitidos apenas emails válidos
+
+[ ] Os inputs do tipo radio só devem permitir a escolha de um sexo
+
+[ ] O input de idade não deve permitir submeter idades abaixo de 12 anos
+
+[ ] No campo de upload de foto são apenas permitidos arquivos do tipo foto
+
+[ ] No campo perfil do facebook devem ser permitidos apenas URL's válidas
+
+[ ] No campo de senha devem ser permitidos senhas entre 6 e 8 caracteres
+
+[ ] O botão limpar deve deixar todos os campos em branco
+
+[ ] O botão Enviar deve submeter os dados
+
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio formulário</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Cadastro</legend>
+        
+        <form action="" method="post" enctype="multipart/form-data">
+        <div>
+            <label> Nome <br>
+                <input type="text" name="nome" autofocus required>
+            </label>
+        </div><br>
+
+        <div>
+            <label> Email <br>
+                <input type="email" name="email" required>
+            </label>
+        </div><br>
+
+        <div>
+            <label> Idade <br>
+                <input type="number" name="idade" min="12" required>
+            </label>
+        </div><br>
+
+        <div>
+            <label> Data de Nascimento <br>
+                <input type="date" name="data-de-Nascimento" required>
+            </label>
+        </div><br>
+
+        <div>
+            <label> Onde você possui conta: <br>
+                <input type="checkbox" name="conta" value="Instagram"> Instagram
+                <input type="checkbox" name="conta" value="Facebook"> Facebook
+                <input type="checkbox" name="conta" value="Youtube"> Youtube
+            </label>
+        </div><br>
+
+        <div>
+            <label> Sexo <br>
+                <input type="radio" name="sexo" value="Masculino"> Masculino
+                <input type="radio" name="sexo" value="Feminino"> Feminino
+            </label>
+        </div><br>
+
+        <div>
+            <label> Cor dos Olhos
+                <input type="color" name="Cor-dos-Olhos">
+            </label>
+        </div><br>
+
+        <div>
+            <label> Biografia <br>
+                <textarea type="text" name="Biografia"></textarea>
+            </label>
+        </div><br>
+
+        <div>
+            <label> Foto do perfil <br>
+                <input type="file" accept="images/*" name="Foto-do-perfil">
+            </label>
+        </div><br>
+
+        <div>
+            <label> Telefone <br>
+                <input type="tel" name="Telefone" required>
+            </label>
+        </div><br>
+
+        <div>
+            <label> Link do Perfil do Facebook <br>
+                <input type="url" name="Link-do-Perfil-do-Facebook">
+            </label>
+        </div><br>
+
+        <div>
+            <label> Senha <br>
+                <input type="password" name="Senha" minlength="6" maxlength="8" required>
+            </label>
+        </div><br>
+
+        <button type="reset" name="reset">Limpar</button>
+        <button type="submit" name="submit">enviar</button>
+        </form>
+    </fieldset>
+</body>
+
+</html> 

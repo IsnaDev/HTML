@@ -1,0 +1,28 @@
+<!--Vídeos em HTML
+    
+    src                         origem do vídeo
+    controls                     para rodar o vídeo
+    controlsList (nodownload)   para desabilitar o download     
+    width                       largura
+    height                      altura
+    autoplay                    rodar automático, alguns navegadores não permite, só se tiver com o muted
+    loop                        quando terminar o vídeo começa a reproduzir novamente
+    muted                       vídeo mudo
+    poster                      colocar uma imagem no início do vídeo
+    source                      colocar vários formatos do vídeo, caso algum não rode
+   
+-->
+
+<video src=""
+       controls
+       controlsList="nodownload"
+       width="400px"
+       height="300px"
+       autoplay loop muted poster=""></video><br><br>
+
+
+<video controls width="500px" height="300px" autoplay loop muted poster="">
+    <source src="mp4">
+    <source src="mkv">
+    <p>impossível carregar o vídeo</p>
+</video>

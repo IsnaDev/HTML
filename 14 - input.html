@@ -1,0 +1,38 @@
+
+<!-- input
+     autocomplete   email, nome, street-address (endereço-rua)
+     autofocus      focaliza apenas um input, se tiver em todos vai focar apenas o prmeiro
+     disabled       desabilitar um input
+     value          atribuir um valor ao input
+     readonly       input com informação apenas para leitura
+     placeholder    escrita informativa no input
+     type (tipo)    password (senha), number, email, checkbox, radio, url, color, ranger ( aceita max min, value, step)
+                    file (para carregar arquivos; o method tem que ser post e enctype tipo multipart/form-data)
+     minlength      limita o mínimo de caracteres
+     maxlength      limita o máximo de caracteres
+     inputmode      serve mais para celular. muda o teclaco para o numérico
+     multiple       carregar múltiplos arquivos
+     required       preenchimento obrigatório     
+     accept (tipo de arquivos): video, mp4, img, video/* (*=qualquer formato de vídeo)
+    -->
+
+<form action="" method="">
+    <label>nome:
+        <input autocomplete="nome"
+            disabled
+            value="digite seu nome"
+            readonly
+            required
+
+        >
+    </label> <br>
+
+
+        <input type="password"
+               minlength="5"
+               maxlength="8"
+               inputmode="numeric"
+               placeholder="digite seu nome"
+               autofocus
+        >
+</form>
